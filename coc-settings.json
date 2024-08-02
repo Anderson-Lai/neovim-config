@@ -1,0 +1,14 @@
+{
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "h", "cxx", "cc", "hpp", "hh"],
+      "rootPatterns": [".ccls", ".git/"],
+      "initializationOptions": {
+        "cache": {
+          "directory": ".ccls-cache"
+        }
+      }
+    }
+  }
+}
