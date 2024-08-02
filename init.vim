@@ -23,8 +23,8 @@ set cindent
 set tabstop=4
 set shiftwidth=4
 
-" set line number to be yellow
-" highlight LineNr guifg=yellow
+" change colour of grey bar 
+highlight SignColumn ctermfg=Yellow ctermbg=Black
 
 " font size
 set guifont=FiraCode:h14
