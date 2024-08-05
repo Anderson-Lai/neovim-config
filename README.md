@@ -29,7 +29,7 @@ nvim
 
 ### Fixing git
 ```
-git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
 ```
 download git for windows [here](https://git-scm.com/download/win) <br />
 git push on a repository, and follow instructions to login with browser
