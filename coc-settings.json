@@ -9,6 +9,17 @@
           "directory": ".ccls-cache"
         }
       }
+    },
+    "rust": {  
+      "command": "rust-analyzer",
+      "filetypes": ["rust"],
+      "rootPatterns": ["Cargo.toml"],
+      "trace": "verbose",
+      "settings": {
+        "rust-analyzer": {
+
+        }
+      }
     }
   }
 }
