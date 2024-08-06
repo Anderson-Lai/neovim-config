@@ -1,4 +1,4 @@
-### Installing Neovim on Ubuntu
+### Installing Neovim on wsl (ubuntu)
 ```
 cd ~
 sudo snap install nvim --classic
@@ -26,3 +26,10 @@ sudo snapp install node --classic
 nvim
 :PlugInstall
 ```
+
+### Fixing git
+```
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe
+```
+download git on windows [here](https://git-scm.com/download/win)
+git push, and login with browser
