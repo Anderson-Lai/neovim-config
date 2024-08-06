@@ -3,15 +3,17 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
+
 set encoding=utf-8
 " Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
 
-" syntax highlighting
+" set colour scheme
 colorscheme vim
 set notermguicolors
 
+" enable syntax highlighting
 syntax enable
 filetype plugin indent on
 
