@@ -19,6 +19,11 @@ git clone https://github.com/Anderson-Lai/neovim-config.git
 mv neovim-config nvim
 ```
 
+### Setting up win32yank
+Download win32yank [here](https://github.com/equalsraf/win32yank/releases) <br />
+Extract the zip file into 'win32yank' <br />
+Move 'win32yank' to C:\win32yank (the complete path to win32yank.exe should be 'C:\win32yank\win32yank.exe')
+
 ### Setting up intellisense for C/C++
 ```
 sudo snap install ccls --classic
@@ -31,5 +36,5 @@ nvim
 ```
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
 ```
-download git for windows [here](https://git-scm.com/download/win) <br />
-git push on a repository, and follow instructions to login with browser
+Download git for windows [here](https://git-scm.com/download/win) <br />
+Git push on a repository, and follow instructions to login with browser

@@ -33,6 +33,24 @@ highlight SignColumn ctermfg=Yellow ctermbg=Black
 " font size
 set guifont=FiraCode:h14
 
+" cmake intellisense
+nnoremap <leader>cmake :term bash -c 'mkdir -p build && cd build && cmake .. && mv compile_commands.json ../' :exit<CR> 
+
+" use win32yank for clipboard operations in wsl
+set clipboard+=unnamedplus
+let g:clipboard = {
+  \   'name': 'win32yank',
+  \   'copy': {
+  \      '+': '/mnt/c/win32yank/win32yank.exe -i',
+  \      '*': '/mnt/c/win32yank/win32yank.exe -i',
+  \    },
+  \   'paste': {
+  \      '+': '/mnt/c/win32yank/win32yank.exe -o',
+  \      '*': '/mnt/c/win32yank/win32yank.exe -o',
+  \    },
+  \   'cache_enabled': 0,
+  \ }
+
 " clearing highlight
 nnoremap <leader>clearhl :nohlsearch<CR>
 
