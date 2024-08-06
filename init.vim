@@ -3,23 +3,25 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
-
 set encoding=utf-8
 " Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
 
-" syntax highlighting
+" syntax highlighting 
 colorscheme vim
 set notermguicolors
 
 syntax enable
 filetype plugin indent on
 
-" enable absolute line numbers
+" enable relative line numbers
+set relativenumber
 set number
+
+" use spaces instead of tabs
 set expandtab
-set cindent
+" set cindent
 set tabstop=4
 set shiftwidth=4
 
@@ -28,6 +30,9 @@ highlight SignColumn ctermfg=Yellow ctermbg=Black
 
 " font size
 set guifont=FiraCode:h14
+
+" clearing highlight
+nnoremap <leader>clearhl :nohlsearch<CR>
 
 " Having longer updatetime (default is 4000 ms = 4s) leads to noticeable
 " delays and poor useir experience
@@ -143,7 +148,7 @@ omap ac <Plug>(coc-classobj-a)
 " Remap <C-f> and <C-b> to scroll float windows/popups
 if has('nvim-0.4.0') || has('patch-8.2.0750')
   nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  noremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
   inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
   inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
   vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"

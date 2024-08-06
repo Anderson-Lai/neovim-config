@@ -22,7 +22,7 @@ mv neovim-config nvim
 ### Setting up intellisense for C/C++
 ```
 sudo snap install ccls --classic
-sudo snapp install node --classic
+sudo snap install node --classic
 nvim
 :PlugInstall
 ```
