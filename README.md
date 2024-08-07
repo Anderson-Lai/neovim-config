@@ -32,6 +32,30 @@ nvim
 :PlugInstall
 ```
 
+### Setting up intellisense for CMake
+```
+nvim
+:CocInstall coc-cmake 
+```
+
+### Setting up intellisense for Rust
+#### First, install rust and cargo
+'''
+curl https://sh.rustup.rs -sSf | sh 
+'''
+
+Restart terminal <br />
+'''
+nvim
+:CocInstall coc-rust-analyzer
+'''
+
+#### Installing rust-analyzer
+'''
+rustup component add rust-rc
+rustup component add rust-analyzer-preview
+'''
+
 ### Fixing git
 ```
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
