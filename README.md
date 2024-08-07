@@ -42,9 +42,10 @@ nvim
 #### First, install rust and cargo
 ```
 curl https://sh.rustup.rs -sSf | sh 
+Restart terminal after running
 ```
 
-Restart terminal <br />
+#### Installing rust-analyzer extension
 ```
 nvim
 :CocInstall coc-rust-analyzer
