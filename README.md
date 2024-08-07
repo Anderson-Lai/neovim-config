@@ -40,21 +40,21 @@ nvim
 
 ### Setting up intellisense for Rust
 #### First, install rust and cargo
-'''
+```
 curl https://sh.rustup.rs -sSf | sh 
-'''
+```
 
 Restart terminal <br />
-'''
+```
 nvim
 :CocInstall coc-rust-analyzer
-'''
+```
 
 #### Installing rust-analyzer
-'''
+```
 rustup component add rust-rc
 rustup component add rust-analyzer-preview
-'''
+```
 
 ### Fixing git
 ```
